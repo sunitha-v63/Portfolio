@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ancizar Sans", sans-serif;
+}
+body {
+  background: url("../src/assets/Image/background.jpeg") no-repeat center/cover;
+}
+.home-container {
+  position: relative;
+  padding: 30px 5%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  animation: zoom-in 1s ease forwards;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.home {
+  background: transparent !important;
+  color: rgb(211, 228, 233) !important;
+  padding: 10px 20px;
+}
+.logo
+{
+  color: rgb(28, 116, 138) !important;
+  font-style: italic;
+}
+.title {
+  color: rgb(100, 194, 194) !important;
+}
+.active {
+  color: red !important;
+  font-weight: bold;
+}
+
+.textlink {
+  color: rgb(28, 116, 138) !important;
+}
+
+.about,
+.skills,
+.project {
+  color: rgb(211, 228, 233);
+}
+.contact-container {
+  background: transparent;
+  color: rgb(211, 228, 233);
+  border: 1px solid rgb(100, 194, 194);
+}
+.gallery-grid {
+  display: grid;
+  grid-template-areas:
+    "b1 b1 b2 b2 b2 b2"
+    "b3 b3 b4 b4 b5 b5";
+  gap: 5px;
+  margin: auto;
+}
+.box1 {
+  grid-area: b1;
+}
+.box2 {
+  grid-area: b2;
+}
+.box3 {
+  grid-area: b3;
+}
+.box4 {
+  grid-area: b4;
+}
+.box5 {
+  grid-area: b5;
+}
+.img-grid {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+.img-grid:hover {
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+.social-icon:hover {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+.cardimg {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.custom-button {
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+.custom-button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: rgb(136, 214, 224);
+  transition: width 0.3s ease;
+}
+
+.custom-button:hover::after {
+  width: 100%;
+}
+.homebtn1
+{
+  color: rgb(185, 182, 182) !important;
+}
