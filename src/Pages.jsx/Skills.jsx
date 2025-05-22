@@ -7,8 +7,9 @@ import image5 from '../assets/Image/img5.jpeg'
 
 function Skills() {
   return (
-    <div className="container py-4 w-50 skills">
-      <h2 className="text-center mb-4">SKILLS</h2>
+    <div className="container py-4 w-50 skills mt-5">
+      <h2 className="text-center mb-1">SKILLS</h2>
+      <h4 className="text-center mb-5">Here are some of my skills on which I have learnt</h4>
       <div className="gallery-grid ">
         <img className="box1 img-grid" src={image1} alt="img1" />
         <img className="box2 img-grid" src={image2} alt="img2" />

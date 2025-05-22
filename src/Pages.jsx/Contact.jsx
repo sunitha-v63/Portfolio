@@ -71,81 +71,65 @@ const Contact = () => {
     }
   };
 
-  return (
-    <div className="container mt-5 contact-container">
-      <div className="p-5 rounded shadow">
-        <h2 className="text-center mb-4">
+  return (<div className="d-flex justify-content-center align-items-center min-vh-100 ">
+      <div className="container p-4  shadow contact-container " style={{ maxWidth: '600px' }}>
+        <h2 className="text-center mb-4"><i className="bi bi-person-rolodex me-3"></i>
           Contact <span className="text-primary">Me</span>
         </h2>
         <form onSubmit={handleSubmit} noValidate>
-          <div className="row mb-3">
-            <div className="col-md-6">
-              <label htmlFor="fullName" className="form-label">
-                Full Name
-              </label>
-              <input
-                type="text"
-                className={`form-control ${errors.fullName ? 'is-invalid' : ''}`}
-                id="fullName"
-                name="fullName"
-                placeholder="Full Name"
-                value={formData.fullName}
-                onChange={handleChange}
-              />
-              {errors.fullName && <div className="invalid-feedback">{errors.fullName}</div>}
-            </div>
-            <div className="col-md-6">
-              <label htmlFor="email" className="form-label">
-                Email
-              </label>
-              <input
-                type="email"
-                className={`form-control ${errors.email ? 'is-invalid' : ''}`}
-                id="email"
-                name="email"
-                placeholder="Email"
-                value={formData.email}
-                onChange={handleChange}
-              />
-              {errors.email && <div className="invalid-feedback">{errors.email}</div>}
-            </div>
-          </div>
-          <div className="row mb-3">
-            <div className="col-md-6">
-              <label htmlFor="phone" className="form-label">
-                Phone Number
-              </label>
-              <input
-                type="tel"
-                className={`form-control ${errors.phone ? 'is-invalid' : ''}`}
-                id="phone"
-                name="phone"
-                placeholder="Phone Number"
-                value={formData.phone}
-                onChange={handleChange}
-              />
-              {errors.phone && <div className="invalid-feedback">{errors.phone}</div>}
-            </div>
-            <div className="col-md-6">
-              <label htmlFor="subject" className="form-label">
-                Subject
-              </label>
-              <input
-                type="text"
-                className={`form-control ${errors.subject ? 'is-invalid' : ''}`}
-                id="subject"
-                name="subject"
-                placeholder="Subject"
-                value={formData.subject}
-                onChange={handleChange}
-              />
-              {errors.subject && <div className="invalid-feedback">{errors.subject}</div>}
-            </div>
-          </div>
           <div className="mb-3">
-            <label htmlFor="message" className="form-label">
-              Your Message
-            </label>
+            <input
+              type="text"
+              className={`form-control ${errors.fullName ? 'is-invalid' : ''}`}
+              id="fullName"
+              name="fullName"
+              placeholder="Full Name"
+              value={formData.fullName}
+              onChange={handleChange}
+            />
+            {errors.fullName && <div className="invalid-feedback">{errors.fullName}</div>}
+          </div>
+
+          <div className="mb-3">
+            <input
+              type="email"
+              className={`form-control ${errors.email ? 'is-invalid' : ''}`}
+              id="email"
+              name="email"
+              placeholder="Email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+            {errors.email && <div className="invalid-feedback">{errors.email}</div>}
+          </div>
+
+          <div className="mb-3">
+            <input
+              type="tel"
+              className={`form-control ${errors.phone ? 'is-invalid' : ''}`}
+              id="phone"
+              name="phone"
+              placeholder="Phone Number"
+              value={formData.phone}
+              onChange={handleChange}
+            />
+            {errors.phone && <div className="invalid-feedback">{errors.phone}</div>}
+          </div>
+
+          <div className="mb-3">
+            <input
+              type="text"
+              className={`form-control ${errors.subject ? 'is-invalid' : ''}`}
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+              value={formData.subject}
+              onChange={handleChange}
+            />
+            {errors.subject && <div className="invalid-feedback">{errors.subject}</div>}
+          </div>
+
+          <div className="mb-3">
             <textarea
               className={`form-control ${errors.message ? 'is-invalid' : ''}`}
               id="message"
@@ -157,8 +141,9 @@ const Contact = () => {
             ></textarea>
             {errors.message && <div className="invalid-feedback">{errors.message}</div>}
           </div>
+
           <div className="text-center">
-            <button className="btn btn-primary px-5" type="submit">
+            <button className="btn contactbtn px-5 fs-5 border-none" type="submit">
               Send Message
             </button>
           </div>

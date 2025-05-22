@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom';
 
 function Header() {
   return (
-    <nav className="navbar navbar-expand-md px-5 py-1" style={{ backgroundColor: '#fef7ef' }}>
+    <nav className="navbar navbar-expand-md px-5 py-1 navheader" >
       <div className="container-fluid">
-        <h5 className="fw-bold mb-0 ms-2 display-4 logo">Portfolio</h5>
+        <h5 className="fw-bold mb-0 ms-2 fs-3 logo">PORTFOLIO</h5>
         <button
           className="navbar-toggler"
           type="button"
@@ -43,6 +43,28 @@ function Header() {
             </li>
             <li className="nav-item">
               <NavLink
+                to="/skills"
+                className={({ isActive }) =>
+                  `nav-link fw-semibold d-flex align-items-center gap-1 ${isActive ? 'active' : 'textlink'
+                  }`
+                }
+              >
+                Skills
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                to="/visionary"
+                className={({ isActive }) =>
+                  `nav-link fw-semibold d-flex align-items-center gap-1 ${isActive ? 'active' : 'textlink'
+                  }`
+                }
+              >
+                Visionary
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
                 to="/project"
                 className={({ isActive }) =>
                   `nav-link fw-semibold d-flex align-items-center gap-1 ${isActive ? 'active' : 'textlink'
@@ -52,15 +74,15 @@ function Header() {
                 Projects
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li>
               <NavLink
-                to="/skills"
+                to="/education"
                 className={({ isActive }) =>
                   `nav-link fw-semibold d-flex align-items-center gap-1 ${isActive ? 'active' : 'textlink'
                   }`
                 }
               >
-                Skills
+                Education
               </NavLink>
             </li>
             <li className="nav-item">

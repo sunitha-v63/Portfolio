@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -32,23 +32,21 @@ body {
   color: rgb(211, 228, 233) !important;
   padding: 10px 20px;
 }
-.logo
-{
-  color: rgb(28, 116, 138) !important;
+.logo {
+  color: rgb(131, 215, 236) !important;
   font-style: italic;
 }
 .title {
   color: rgb(100, 194, 194) !important;
 }
 .active {
-  color: red !important;
+  color: rgb(252, 239, 239) !important;
   font-weight: bold;
 }
 
 .textlink {
-  color: rgb(28, 116, 138) !important;
+  color: rgb(200, 228, 235) !important;
 }
-
 .about,
 .skills,
 .project {
@@ -58,6 +56,12 @@ body {
   background: transparent;
   color: rgb(211, 228, 233);
   border: 1px solid rgb(100, 194, 194);
+  border-radius: 20px !important;
+}
+.contactbtn {
+  background: grey !important;
+  color: #ffffff !important;
+  border-radius: 10px !important;
 }
 .gallery-grid {
   display: grid;
@@ -110,7 +114,7 @@ body {
 }
 .cardimg {
   width: 100%;
-  height: 260px;
+  height: 220px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -124,7 +128,7 @@ body {
   text-decoration: none;
 }
 .custom-button::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -2px;
@@ -133,11 +137,53 @@ body {
   background-color: rgb(136, 214, 224);
   transition: width 0.3s ease;
 }
-
 .custom-button:hover::after {
   width: 100%;
 }
-.homebtn1
-{
+.homebtn1 {
   color: rgb(185, 182, 182) !important;
+}
+.content-box,
+.content-box1 {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.content-box1 .circle {
+  position: absolute;
+  top: 40px;
+  left: -3px;
+  width: 15px;
+  height: 15px;
+  background-color: grey;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+.content-box .circle {
+  position: absolute;
+  top: 6px;
+  left: -3px;
+  width: 15px;
+  height: 15px;
+  background-color: grey;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+.content-box h4,
+.content-box h5,
+.content-box p {
+  margin-top: 10px;
+}
+.visionary{
+   color: rgb(211, 228, 233);
+}
+.visionary h5{
+  color: rgb(163, 160, 160);
+  font-weight: bold;
+}
+.visionary p{
+  font-size: 17px;
 }
