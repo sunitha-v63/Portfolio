@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -46,24 +47,24 @@ function Footer() {
         </div>
         <nav aria-label="Footer Navigation">
           <div className="mb-3 d-flex justify-content-center flex-wrap gap-4 fs-4 text-decoration-none">
-          <a href="about" className="footer-link text-light text-decoration-none">
+            <Link to="/about" className="footer-link text-light text-decoration-none">
               About
-            </a>
-            <a href="skills" className="footer-link text-light text-decoration-none">
+            </Link>
+            <Link to="/skills" className="footer-link text-light text-decoration-none">
               Skills
-            </a>
-            <a href="visionary" className="footer-link text-light text-decoration-none">
+            </Link>
+            <Link to="/visionary" className="footer-link text-light text-decoration-none">
               Visionary
-            </a>
-            <a href="project" className="footer-link text-light text-decoration-none">
+            </Link>
+            <Link to="/project" className="footer-link text-light text-decoration-none">
               Projects
-            </a>
-            <a href="education" className="footer-link text-light text-decoration-none">
+            </Link>
+            <Link to="/education" className="footer-link text-light text-decoration-none">
               Education
-            </a>
-            <a href="contact" className="footer-link text-light text-decoration-none">
+            </Link>
+            <Link to="/contact" className="footer-link text-light text-decoration-none">
               Contact
-            </a>
+            </Link>
           </div>
         </nav>
         <div className="mb-3">
